@@ -17,8 +17,8 @@ export default function Header() {
                 <div className={styles.header__left__text}>
                     <h1>CodeDay Singapore</h1>
                     <p>
-                        CodeDay is a 24-hour hackathon for students to learn,
-                        build, and share their creations.
+                        The most beginner-friendly event for building amazing
+                        games and apps is coming to Singapore yet again!
                     </p>
                     <div className={styles.header__left__buttons}>
                         <a href="https://codeday.org/singapore">
@@ -33,7 +33,7 @@ export default function Header() {
             <div className={styles.header__right}>
                 <Image
                     src={HeroImage}
-                    alt="Students participating in CodeDay"
+                    alt="Zach Latta from Hack Club hosts an HTML workshop at CodeDay SF Bay Area 2017"
                     width={640}
                     height={425}
                 />

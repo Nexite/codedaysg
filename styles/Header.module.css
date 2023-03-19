@@ -27,16 +27,6 @@
     margin-right: 1rem;
 }
 
-.header__left h1 {
-    display: inline-block;
-    font-size: 5rem;
-}
-
-.header__left p {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-}
-
 .header__left__buttons {
     display: flex;
     flex-direction: row;
