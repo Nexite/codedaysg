@@ -1,0 +1,111 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.header__left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.header__left__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.header__left img {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.header__left h1 {
+    display: inline-block;
+    font-size: 5rem;
+}
+
+.header__left p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.header__left__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.header__left__buttons button {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.header__left__buttons button:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1500px) {
+    .header {
+        flex-direction: column;
+        gap: 2.5rem;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .header__left {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 900px) {
+    .header__left {
+        display: block;
+    }
+
+    .header__left__text {
+        display: block;
+    }
+
+    .header__left img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .header__left h1 {
+        display: block;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .header__left p {
+        display: block;
+        text-align: center;
+    }
+
+    .header__left__buttons {
+        align-items: center;
+        justify-content: center;
+        margin-top: 2.5rem;
+    }
+
+    /* setting it invisible for now until I figure out how to make it responsive */
+    .header__right {
+        display: none;
+    }
+}
