@@ -3,6 +3,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10rem;
+    padding: 6rem;
     min-height: 100vh;
+}
+
+.main > * {
+    margin: 2rem 0;
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .main > * {
+        margin: 1rem 0;
+    }
 }

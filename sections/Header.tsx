@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Logo from "@/public/logo.svg";
-import HeroImage from "@/public/hero.jpeg";
+import HeroImage from "@/public/hero.webp";
 
 import styles from "@/styles/Header.module.css";
 
@@ -8,12 +8,15 @@ export default function Header() {
     return (
         <header className={styles.header}>
             <div className={styles.header__left}>
-                <Image
-                    src={Logo}
-                    alt="CodeDay Singapore"
-                    width={100}
-                    height={100}
-                />
+                <div className={styles.header__left__logo}>
+                    <Image
+                        src={Logo}
+                        alt="CodeDay Singapore"
+                        width={80}
+                        height={80}
+                        className={styles.header__left__logo__image}
+                    />
+                </div>
                 <div className={styles.header__left__text}>
                     <h1>CodeDay Singapore</h1>
                     <p>
@@ -36,6 +39,7 @@ export default function Header() {
                     alt="Zach Latta from Hack Club hosts an HTML workshop at CodeDay SF Bay Area 2017"
                     width={640}
                     height={425}
+                    className={styles.header__right__image}
                 />
             </div>
         </header>

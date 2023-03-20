@@ -1,0 +1,30 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+
+    background-color: #ff686b;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.buttons {
+    margin-top: 2rem;
+}
+
+.buttons button {
+    color: #ff686b;
+    background-color: #fff;
+}
+
+@media (max-width: 900px) {
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

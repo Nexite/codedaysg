@@ -117,6 +117,21 @@ a {
     text-decoration: none;
 }
 
+button {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #ff686b;
+    transform: scale(1.05);
+}
+
 @media (prefers-color-scheme: dark) {
     html {
         color-scheme: dark;
