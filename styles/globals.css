@@ -125,10 +125,10 @@ button {
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    background-color: #ff686b;
 }
 
 button:hover {
-    background-color: #ff686b;
     transform: scale(1.05);
 }
 
