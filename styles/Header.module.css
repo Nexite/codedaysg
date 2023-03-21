@@ -58,6 +58,7 @@
     .header {
         flex-direction: column;
         gap: 2.5rem;
+        align-items: center;
     }
 
     .header > div {
@@ -70,30 +71,23 @@
 }
 
 @media (max-width: 900px) {
+    .header {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
     .header__left {
-        display: block;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__left img {
+        margin-right: 0;
     }
 
     .header__left__text {
         display: block;
-    }
-
-    .header__left img {
-        display: block;
-        margin: 0 auto;
-    }
-
-    .header__left h1 {
-        display: block;
-        font-size: 3rem;
-        text-align: center;
-        margin-top: 1rem;
-    }
-
-    .header__left p {
-        display: block;
-        font-size: 1.25rem;
-        text-align: center;
     }
     
     .header__left__buttons {
@@ -102,5 +96,9 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
+    }
+
+    .header__right {
+        display: none;
     }
 }
