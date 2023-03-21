@@ -41,7 +41,6 @@ export default function Home() {
             <main className={styles.main}>
                 <Header />
                 <About />
-                {/* <Register /> */}
                 <RegisterForm webname="singapore" />
             </main>
             <Footer />
