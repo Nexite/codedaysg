@@ -3,8 +3,29 @@ import styles from "@/styles/RegisterForm.module.css";
 
 const CODEDAY_ORIGIN = "https://event.codeday.org";
 
-const lightBg = "white";
-const darkBg = "black";
+const styleOverrides = `
+body {
+	background-color: white !important;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: black !important;
+		--chakra-colors-current-textLight: var(--chakra-colors-whiteAlpha-700);
+	}
+
+	.chakra-button[disabled] {
+		background: var(--chakra-colors-whiteAlpha-500) !important;
+	}
+
+	input::placeholder {
+		color: var(--chakra-colors-whiteAlpha-500) !important;
+	}
+
+	input {
+		border-color: var(--chakra-colors-whiteAlpha-500) !important;
+	}
+}`
 
 interface Props {
     language?: string;
@@ -46,9 +67,9 @@ export default function CodeDayRegistrationForm({
         ref.current?.addEventListener("load", () =>
             ref.current?.contentWindow?.postMessage("poll", CODEDAY_ORIGIN)
         );
-        ref.current?.contentWindow?.postMessage({ bgColor: { light: lightBg, dark: darkBg } }, CODEDAY_ORIGIN);
+        ref.current?.contentWindow?.postMessage({ css: styleOverrides }, CODEDAY_ORIGIN);
         ref.current?.addEventListener("load", () =>
-            ref.current?.contentWindow?.postMessage({ bgColor: { light: lightBg, dark: darkBg } }, CODEDAY_ORIGIN)
+        ref.current?.contentWindow?.postMessage({ css: styleOverrides }, CODEDAY_ORIGIN)
         );
     }, [isRefDefined, isWindowDefined]);
 
