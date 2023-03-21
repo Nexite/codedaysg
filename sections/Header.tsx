@@ -37,8 +37,6 @@ export default function Header() {
                 <Image
                     src={HeroImage}
                     alt="Zach Latta from Hack Club hosts an HTML workshop at CodeDay SF Bay Area 2017"
-                    width={640}
-                    height={425}
                     className={styles.header__right__image}
                 />
             </div>
