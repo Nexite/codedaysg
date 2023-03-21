@@ -24,6 +24,9 @@
 
 .header__left img {
     display: inline-block;
+    margin-right: 2rem;
+    max-width: 150px;
+    height: auto;
 }
 
 .header__left__buttons {

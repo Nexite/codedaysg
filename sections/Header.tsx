@@ -12,8 +12,6 @@ export default function Header() {
                     <Image
                         src={Logo}
                         alt="CodeDay Singapore"
-                        width={80}
-                        height={80}
                         className={styles.header__left__logo__image}
                     />
                 </div>
