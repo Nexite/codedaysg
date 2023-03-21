@@ -40,8 +40,6 @@
     .header {
         flex-direction: column;
         gap: 2.5rem;
-        align-items: flex-start;
-        justify-content: flex-start;
     }
 
     .header__left {
