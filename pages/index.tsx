@@ -4,7 +4,7 @@ import styles from "@/styles/Home.module.css";
 import Header from "@/sections/Header";
 import About from "@/sections/About";
 import Footer from "@/sections/Footer";
-import Register from "@/sections/Register";
+import RegisterForm from "@/components/RegisterForm";
 
 export default function Home() {
     return (
@@ -41,7 +41,8 @@ export default function Home() {
             <main className={styles.main}>
                 <Header />
                 <About />
-                <Register />
+                {/* <Register /> */}
+                <RegisterForm webname="singapore" />
             </main>
             <Footer />
         </>
