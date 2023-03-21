@@ -3,6 +3,9 @@ import styles from "@/styles/RegisterForm.module.css";
 
 const CODEDAY_ORIGIN = "https://event.codeday.org";
 
+const lightBg = "white";
+const darkBg = "black";
+
 interface Props {
     language?: string;
     webname: string;
@@ -42,6 +45,10 @@ export default function CodeDayRegistrationForm({
         ref.current?.contentWindow?.postMessage("poll", CODEDAY_ORIGIN);
         ref.current?.addEventListener("load", () =>
             ref.current?.contentWindow?.postMessage("poll", CODEDAY_ORIGIN)
+        );
+        ref.current?.contentWindow?.postMessage({ bgColor: { light: lightBg, dark: darkBg } }, CODEDAY_ORIGIN);
+        ref.current?.addEventListener("load", () =>
+            ref.current?.contentWindow?.postMessage({ bgColor: { light: lightBg, dark: darkBg } }, CODEDAY_ORIGIN)
         );
     }, [isRefDefined, isWindowDefined]);
 
