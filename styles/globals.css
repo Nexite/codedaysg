@@ -118,6 +118,8 @@ a {
 }
 
 button {
+    color: #fff;
+    background-color: #ff686b;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     border: none;
@@ -125,7 +127,6 @@ button {
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    background-color: #ff686b;
 }
 
 button:hover {
