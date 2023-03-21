@@ -8,6 +8,10 @@
     margin-bottom: 2rem;
 }
 
+.header > div {
+    width: 50%;
+}
+
 .header__left {
     display: flex;
     flex-direction: row;
@@ -50,10 +54,14 @@
     height: auto;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
     .header {
         flex-direction: column;
         gap: 2.5rem;
+    }
+
+    .header > div {
+        width: 100%;
     }
 
     .header__left {
@@ -61,7 +69,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .header__left {
         display: block;
     }
