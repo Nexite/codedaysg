@@ -7,13 +7,13 @@
     min-height: 100vh;
 }
 
-.main > * {
-    margin: 2rem 0;
+.main > div {
+    margin: 4rem 0;
     width: 100%;
 }
 
 @media (max-width: 900px) {
     .main > * {
-        margin: 1rem 0;
+        margin: 2rem 0;
     }
 }

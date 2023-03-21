@@ -1,5 +1,7 @@
 .about {
     display: block;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .text_left {
@@ -13,9 +15,16 @@
 }
 
 @media (max-width: 900px) {
-    .about > div {
+    .about {
+        display: block;
+    }
+    
+    .text_left, .text_right {
         width: 100%;
         float: none;
-        margin-bottom: 2.5rem;
+    }
+
+    .text_left {
+        margin-bottom: 2rem;
     }
 }
